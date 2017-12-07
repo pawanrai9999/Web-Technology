@@ -3,14 +3,17 @@
     This program is rewritten
 */
 
-var year = parseInt(prompt("Enter the year: "));
-
-if((year%400) == 0){
-  document.write("This is leap year.");
-} else if((year%100) == 0){
-  document.write("This is not leap year.");
-} else if((year%4) == 0){
-  document.write("This is leap year.");
-} else {
-  document.write("This is not leap year.");
+function checkLeap(year){
+  if((year%400) == 0){
+    document.write("This is leap year.");
+  } else if((year%100) == 0){
+    document.write("This is not leap year.");
+  } else if((year%4) == 0){
+    document.write("This is leap year.");
+  } else {
+    document.write("This is not leap year.");
+  }
 }
+
+var a = parseInt(prompt("Enter the year: "));
+checkLeap(a);
