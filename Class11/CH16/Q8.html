@@ -1,0 +1,24 @@
+<html>
+<head>
+  <title>Welcome</title>
+  <script>
+  var d = new Date();
+    var time = d.getHours();
+
+    if (time < 12) 
+      {
+      document.write("<b>Good morning!</b> and welcome to my website<br>");
+      }
+    if (time > 12) 
+      {
+      document.write("<b>Good afternoon!</b> and welcome to my website<br>");
+      }
+      hrs = d.getHours();
+      min = d.getMinutes();
+      sec = d.getSeconds();
+      
+      document.write("According to your clock the time is "+ hrs + ":" + min + ":" +  sec);
+    </script>
+  </script>
+</head>
+</html>
